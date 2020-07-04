@@ -1,7 +1,7 @@
 const express = require('express')
 const socket = require('socket.io')
 const app = express() //app setup
-const port = process.env.port || 8000
+const port = process.env.PORT || 8000
 
 app.use(express.static('public'));
 
