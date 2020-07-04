@@ -5,6 +5,10 @@ const port = process.env.port || 8000
 
 app.use(express.static('public'));
 
+const server = app.listen(port, () => {
+    console.log(`listening to ${port}`);
+})
+
 const io = socket(server); //io setup
 
 // Listening for event 'connection' with browser
@@ -18,8 +22,5 @@ io.on('connection', function (socket) {
     socket.on('typing', function (data) {
         socket.broadcast.emit('typing', data);
     })
-})
-
-const server = app.listen(port, () => {
-    console.log(`listening to ${port}`);
+    console.dir(socket)
 })

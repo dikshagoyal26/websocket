@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websockets</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="chat">
+        <h2>Let's Chat!!**</h2>
+        <div>
+            <div id="messages">
+                <div id="output"></div>
+                <div id="typing"></div>
+            </div>
+            <input id="userHandle" type="text" placeholder="Your Name" />
+            <input id="userMessage" type="text" placeholder="Message" />
+            <button id="sendMessagebtn">Send</button>
+        </div>
+        <h3>**Please do open more then one web page and start chatting..</h3>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
