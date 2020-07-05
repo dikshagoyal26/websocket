@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    let socket = io.connect('http://192.168.1.4:8000/');
+    let socket = io.connect('https://letschitchatweb.herokuapp.com/');
     let name = window.prompt('Please enter your Good Name!')
     let userMessage = document.querySelector('#userMessage')
     let userHandle = document.querySelector('#userHandle')
